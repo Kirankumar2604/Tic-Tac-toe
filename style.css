@@ -39,10 +39,10 @@ body{
 #resetBtn{
     width: 18vmin;
     height: 7vmin;
-    background-color: black;
+    background-color: #FADA7A;
     border-radius: 2rem;
     border: none;
-    color: #FFF2F2;
+    color: #000;
     font-size: 3vmin;
 }
 .msg{
