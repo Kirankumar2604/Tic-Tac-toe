@@ -60,6 +60,7 @@ const enableBox = () => {
     for (let box of boxes){
         box.disabled = false;
         box.innerHTML = "";
+        box.style.backgroundColor = "";
         winContainer.classList.add("hide");
     }
 }
@@ -74,6 +75,10 @@ const disabledBox = () => {
 // check winner
 const checkWinner = () => {
     for (let patterns of winPatterns){
+        let pos1 = boxes[patterns[0]];
+        let pos2 = boxes[patterns[1]];
+        let pos3 = boxes[patterns[2]];
+        
         let pos1Value = boxes[patterns[0]].innerText;
         let pos2Value = boxes[patterns[1]].innerText;
         let pos3Value = boxes[patterns[2]].innerText;
@@ -82,6 +87,12 @@ const checkWinner = () => {
             if(pos1Value === pos2Value && pos2Value == pos3Value){
                 console.log("winner")
                 showWinner(pos1Value)
+
+            pos1.style.backgrountColor = "lightgreen";
+            pos2.style.backgrountColor = "lightgreen";
+            pos3.style.backgrountColor = "lightgreen";
+
+            return;
             };
         };
     };
