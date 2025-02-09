@@ -88,9 +88,9 @@ const checkWinner = () => {
                 console.log("winner")
                 showWinner(pos1Value)
 
-            pos1.style.backgrountColor = "lightgreen";
-            pos2.style.backgrountColor = "lightgreen";
-            pos3.style.backgrountColor = "lightgreen";
+            pos1.style.backgroundColor = "lightgreen";
+            pos2.style.backgroundColor = "lightgreen";
+            pos3.style.backgroundColor = "lightgreen";
 
             return;
             };
